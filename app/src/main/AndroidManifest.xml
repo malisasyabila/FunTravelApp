@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FunTravelapp"
+        android:name=".MyApp"
+        tools:targetApi="31">
+
+        <!-- FileProvider must be declared here -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".FirebaseMessageReceiver" android:exported="false" />
+
+        <!-- Other activities -->
+        <activity android:name=".InformationBooking" android:exported="false"/>
+        <activity android:name=".GalleryActivity" android:exported="false" />
+        <activity android:name=".CaptureAct" android:exported="false" />
+        <activity android:name=".ScannerActivity" android:exported="false" />
+        <activity android:name=".CameraActivity" android:exported="false" />
+        <activity android:name=".MapsActivity" android:exported="false" />
+        <activity android:name=".MainDashboardActivity" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".BookingHistoryActivity" android:exported="false" />
+        <activity android:name=".RateBookingActivity" android:exported="false" />
+        <activity android:name=".BookingPrintActivity" android:exported="false" />
+        <activity android:name=".AboutUs" android:exported="false" />
+        <activity android:name=".ReviewRateActivity" android:exported="true" />
+        <activity android:name=".BookingActivity" android:exported="true" />
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+    </application>
+
+</manifest>

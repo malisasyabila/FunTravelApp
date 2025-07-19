@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603996667607",
+    "project_id": "funtravelapp-8f3b5",
+    "storage_bucket": "funtravelapp-8f3b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603996667607:android:50f163be5f642fe994ba92",
+        "android_client_info": {
+          "package_name": "com.example.funtravelapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4l-M6pQQyU9ngy7nYGjlnPYPtlO2BG9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

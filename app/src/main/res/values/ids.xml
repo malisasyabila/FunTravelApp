@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="input_name" type="id"/>
+    <item name="booking_scroll" type="id"/>
+    <item name="input_people" type="id"/>
+    <item name="input_date" type="id"/>
+    <item name="input_notes" type="id"/>
+    <item name="input_email" type="id"/>
+</resources>

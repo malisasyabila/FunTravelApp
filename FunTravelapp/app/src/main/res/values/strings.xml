@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Fun Travel App</string>
+
+    <!-- Default placeholder -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Drawer toggle text -->
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+
+    <!-- Malaysia States Array -->
+    <string-array name="malaysia_states">
+        <item>Selangor</item>
+        <item>Pulau Pinang</item>
+        <item>Johor</item>
+        <item>Sarawak</item>
+        <item>Sabah</item>
+        <item>Kedah</item>
+        <item>Perak</item>
+        <item>Melaka</item>
+        <item>Kelantan</item>
+        <item>Pahang</item>
+        <item>Perlis</item>
+        <item>Terengganu</item>
+        <item>Negeri Sembilan</item>
+        <item>W.P Kuala Lumpur</item>
+        <item>W.P Labuan</item>
+        <item>W.P Putrajaya</item>
+    </string-array>
+</resources>

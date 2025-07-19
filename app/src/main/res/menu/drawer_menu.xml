@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_map" android:title="📍 Maps" />
+    <item android:id="@+id/nav_scanner" android:title="🧭 Scanner" />
+    <item android:id="@+id/nav_about_us" android:title="🖼️ About Us" />
+    <item android:id="@+id/nav_history" android:title="🔔 Booking History" />
+    <item android:id="@+id/nav_review" android:title="⭐ My Reviews" />
+    <item android:id="@+id/nav_logout" android:title="Logout" />
+</menu>
