@@ -20,6 +20,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // Load Google Maps API Key from local.properties
+        def mapsApiKey = project.findProperty("MAPS_API_KEY") ?: "DUMMY_KEY"
+        resValue "string", "google_maps_key", mapsApiKey
     }
 
     buildTypes {

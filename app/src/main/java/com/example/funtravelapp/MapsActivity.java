@@ -132,7 +132,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void drawRoute(LatLng origin, LatLng destination) {
-        String apiKey = "YOUR_API_KEY"; // Gantikan dengan Google Maps API Key kamu
+        String apiKey = "YOUR_API_KEY";
         String urlString = "https://maps.googleapis.com/maps/api/directions/json?" +
                 "origin=" + origin.latitude + "," + origin.longitude +
                 "&destination=" + destination.latitude + "," + destination.longitude +
